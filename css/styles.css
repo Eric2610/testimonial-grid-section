@@ -1,0 +1,222 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    overflow-x: hidden;
+    height: 100vh;
+    background-color: hsl(0, 0%, 81%);
+}
+
+#motherOfContainers{
+    display: grid;
+    grid-template-rows: 149px 298px 298px;
+    grid-template-columns: 0.5fr 1fr 1fr 0.8fr 0.5fr;
+    grid-template-areas:
+    ". . . . ."
+    ". Daniel Jonathan Kira ."
+    ". Jaenette Patrick Kira .";
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+}
+
+/* Daniel */
+
+.containerDaniel{
+    grid-area: Daniel;
+    width: 40vw;
+    background-color: hsl(263, 55%, 52%);
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-areas: 
+    "DanielName DanielName"
+    "DanielText DanielText"
+    "DanielText DanielText";
+    border-radius: 20px;
+}
+.danielNameBox{
+    grid-area: DanielName;
+    margin: 20px 0 0 20px;
+}
+.nameDaniel, .VGDaniel, .nameJonathan, .VGJoni{
+    position: relative;
+    left: 50px;
+    bottom: 40px;
+    color: white;
+}
+.nameDaniel, .nameJonathan, .nameJeanette, .namePatrick{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500px;
+}
+.VGDaniel, .VGJoni, .VGJeanette, .VGPatrick{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500px;
+    opacity: 50%;
+}
+
+.danieltexts{
+    grid-area: DanielText;
+    width: 90%;
+    color: white;
+    margin-left: 40px;
+}
+
+.titleDaniel, .titleJoni, .titleJeanette{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500px;
+    font-size: 1.5rem;
+    position: relative;
+    bottom: 20px;
+}
+.subtitleDaniel, .subtitleJoni, .subtitleJeanette{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500px;
+    opacity: 50%;
+}
+
+.photo{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+/* jonathan */
+
+.containerJonathan{
+    grid-area: Jonathan;
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "JoniName JoniName"
+    "JoniText JoniText";
+}
+
+.jonathanNameBox{
+    grid-area: JoniName;
+    margin: 20px 0 0 20px;
+}
+.joniTexts{
+    grid-area: JoniText;
+    width: 80%;
+    color: white;
+    margin-left: 40px;
+}
+
+/* Jeanette */
+
+.containerJeanette{
+    grid-area: Jaenette;
+    background-color: white;
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "JeanetteName JeanetteName"
+    "JeanetteText JeanetteText";
+}
+
+.jeanetteNameBox{
+    grid-area: JeanetteName;
+    margin: 20px 0 0 20px; 
+}
+.jeanetteTexts{
+    grid-area: JeanetteText;
+    margin-left: 40px;
+}
+.nameJeanette, .VGJeanette, .namePatrick, .VGPatrick, .nameKira, .VGKira{
+    position: relative;
+    left: 50px;
+    bottom: 40px;
+}
+
+/* Patrick */
+
+.containerPatrick{
+    grid-area: Patrick;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "PatrickName PatrickName"
+    "PatrickTexts PatrickTexts";
+    background-color: black;
+    border-radius: 20px;
+}
+.patrickNameBox{   
+    grid-area: PatrickName;
+    margin: 20px 0 0 20px;
+    color: white;
+}
+.patrickTexts{
+    grid-area: PatrickTexts;
+    margin-left: 40px;
+}
+
+.titlePatrick{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500px;
+    font-size: 1.5rem;
+    position: relative;
+    bottom: 20px;
+    color: white;
+}
+.subtitlePatrick{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500px;
+    opacity: 50%;
+    color: white;
+}
+/* Kira */
+
+.containerKira{
+    grid-area: Kira;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "KiraName KiraName"
+    "KiraText KiraText";
+    background-color: white;
+    border-radius: 20px;
+}
+
+.kiraNameBox{
+   grid-area: KiraName;
+   margin: 20px 0 0 20px;
+}
+.kiraTexts{
+    grid-area: KiraText;
+    margin-left: 40px;
+}
+
+.nameKira{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500px;
+}
+.VGKira{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500px;
+    opacity: 50%;
+}
+
+.titleKira{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500px;
+    font-size: 1.5rem;
+    position: relative;
+    bottom: 20px;
+    color: black;  
+}
+.subtitleKira{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500px;
+    opacity: 50%;
+    color: black;  
+}
